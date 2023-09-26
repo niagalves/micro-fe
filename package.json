@@ -1,0 +1,30 @@
+{
+  "name": "micro-fe",
+  "version": "0.0.0",
+  "projectPrefix": "braza",
+  "scripts": {
+    "start": "nx preview",
+    "dev": "nx dev",
+    "preview": "nx preview",
+    "build": "nx build",
+    "build:all": "nx run-many --targets=lint,test,build",
+    "prepare": "husky install"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=18.16.0",
+    "npm": ">=9.5.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@nx/js": "16.9.1",
+    "commitlint-plugin-function-rules": "^2.0.2",
+    "nx": "16.9.1",
+    "nx-cloud": "latest",
+    "husky": "^8.0.0"
+  },
+  "workspaces": [
+    "apps/*"
+  ]
+}
