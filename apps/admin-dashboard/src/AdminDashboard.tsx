@@ -1,7 +1,7 @@
 function AdminDashboard() {
   return (
     <div style={{ background: 'black', color: 'white' }}>
-      <h1>Meu admin dashboard</h1>
+      <h1>Minha dashboard</h1>
     </div>
   );
 }
