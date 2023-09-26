@@ -1,3 +1,3 @@
-declare module 'ui/*' {
+declare module '*' {
   export default any;
 }

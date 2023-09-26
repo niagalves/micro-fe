@@ -7,10 +7,10 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: 'ui_app',
-      filename: 'remoteEntry.js',
+      name: 'admin-details',
+      filename: 'adminDetails.js',
       exposes: {
-        './Button': './src/components/Button',
+        './AdminDetails': './src/AdminDetails.tsx',
       },
       shared: ['react', 'react-dom'],
     }),

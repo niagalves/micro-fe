@@ -7,10 +7,10 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: 'admin-dashboard',
-      filename: 'adminDashboard.js',
-      exposes: {
-        './AdminDashboard': './src/AdminDashboard.tsx',
+      name: 'host',
+      remotes: {
+        dashboard: 'http://localhost:4001/assets/adminDashboard.js',
+        detail: 'http://localhost:4002/assets/adminDetails.js',
       },
       shared: ['react', 'react-dom'],
     }),
